@@ -1,0 +1,44 @@
+global:
+  certManager:
+    installed: true
+  createIngress: true
+  gitea:
+    admin:
+      email: support@opsmx.com
+      existingSecret: gitea-secret
+      password: opsmxadmin123
+      username: opsmx
+    enabled: false
+    standardrepoBranch: 3.12
+  oesUI:
+    host: isd-n.release.opsmx.org
+    protocol: https
+  ssl:
+    enabled: true
+spinnaker:
+  autoInstallSampleApps: true
+  gitopsHalyard:
+    enabled: true
+    pipelinePromotion:
+      baseUrl: github.com
+      branch: master
+      enabled: true
+      organization: OpsMx
+      repository: isd312-release-testing 
+      rootFolder: pipeline/
+      token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      type: git
+      usermail: saiteja.katabhatina@opsmx.io
+      username: saitejaopsmx
+    repo:
+      baseUrlHostName: github.com
+      dynAccntConfigPath: /
+      dynamicAccRepository: isd312-release-testing
+      halConfigBranch: master
+      halConfigPath: /
+      organization: OpsMx
+      repository: isd312-release-testing
+      token: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      type: git
+      usermailid: saiteja.katabhatina@opsmx.io
+      username: saitejaopsmx
